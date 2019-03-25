@@ -8,11 +8,18 @@ class TicketsController extends Controller
 {
     public function index()
     {
-
+        return view('tickets.index');
     }
 
-    public function create()
+    public function createTicket()
     {
+        return view('tickets.create');
+    }
 
+    public function showTicket($subject)
+    {
+        return view('tickets.edit')->with([
+            'subject' => $subject,
+        ]);
     }
 }

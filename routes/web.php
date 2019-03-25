@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/', 'TicketsController@index');
+Route::view('/', 'welcome');
+Route::get('/tickets', 'TicketsController@index');
 Route::get('/create', 'TicketsController@create');
