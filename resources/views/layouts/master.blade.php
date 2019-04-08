@@ -26,7 +26,17 @@
     </button>
     <a class="navbar-brand" href="#">Support Ticket App</a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-
+        <ul class="navbar-nav mr-auto">
+            @foreach(config('app.nav') as $link => $label)
+                <li class="nav-item active">
+                        <a class="nav-link" href="/{{ $link }}">{{ $label }} <span class="sr-only">(current)</span></a>
+                </li>
+            @endforeach
+        </ul>
+        <form method="GET" action="/tickets/search-process" class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" name="searchTerm" placeholder="Search" value="">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
 </nav>
 

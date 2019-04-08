@@ -1,0 +1,18 @@
+{
+  "Email Error": {
+    "id" : 0,
+    "name": "Noelle Afolabi",
+    "title" : "Email Error",
+    "description" : "When logging into my email, i get the error message email does not exist",
+    "status" : "open",
+    "date" : "2019-03-11 12:23:39"
+  },
+  "Password Error": {
+    "id" : 0,
+    "name": "kehinde Afolabi",
+    "title" : "Email Error",
+    "description" : "When logging into my email, i get the error message email does not exist",
+    "status" : "open",
+    "date" : "2019-03-11 12:23:39"
+  }
+}

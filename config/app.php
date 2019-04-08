@@ -2,6 +2,14 @@
 
 return [
 
+    'nav' => [
+        '' => 'Home',
+        'tickets' => 'Tickets',
+        'tickets/create' => 'Create Tickets',
+        'contact' => "Contact",
+
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
