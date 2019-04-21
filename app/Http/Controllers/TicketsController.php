@@ -8,8 +8,10 @@ class TicketsController extends Controller
 {
     public function index()
     {
+        $tickets = $this->getBooksData();
         return view('tickets.index')->with([
             'searchTerm' => '',
+            'tickets' => $tickets,
         ]);
     }
 
@@ -97,5 +99,13 @@ class TicketsController extends Controller
     public function contact()
     {
         return view('tickets.contact');
+    }
+
+    public function getBooksData()
+    {
+        $ticketsData = file_get_contents(database_path('/tickets.json'));
+        $tickets = json_decode($ticketsData, true);
+
+        return $tickets;
     }
 }

@@ -23,28 +23,21 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>Otto</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>Thornton</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-        </tr>
+        @if(count($tickets) == 0)
+            <tr>
+                <td colspan="5">No tickets found.</td>
+            </tr>
+        @else
+            @foreach($tickets as $title => $ticket)
+                <tr>
+                    <td>{{ $ticket['name'] }}</td>
+                    <td>{{ $ticket['title'] }}</td>
+                    <td>{{ $ticket['description'] }}</td>
+                    <td>{{ $ticket['status'] }}</td>
+                    <td>{{ $ticket['date'] }}</td>
+                </tr>
+            @endforeach
+        @endif
         </tbody>
     </table>
 @endsection

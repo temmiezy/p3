@@ -7,12 +7,12 @@
     "status" : "open",
     "date" : "2019-03-11 12:23:39"
   },
-  "Password Error": {
+  "Access Details Problem": {
     "id" : 0,
     "name": "kehinde Afolabi",
-    "title" : "Email Error",
-    "description" : "When logging into my email, i get the error message email does not exist",
-    "status" : "open",
+    "title" : "Access Details Problem",
+    "description" : "I get an error that my credentials are not correct",
+    "status" : "closed",
     "date" : "2019-03-11 12:23:39"
   }
 }
