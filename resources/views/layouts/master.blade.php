@@ -34,8 +34,8 @@
             @endforeach
         </ul>
         <form method="GET" action="/tickets/search-process" class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" name="searchTerm" placeholder="Search" value="">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="text" name="searchTerm" placeholder="filter by title column" value="">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Filter</button>
         </form>
     </div>
 </nav>

@@ -7,3 +7,7 @@
 ### Clone
 
 - Clone this repo to your local machine using https://github.com/temmiezy/p3
+
+## Features
+## Usage (Optional)
+Search -> Use Title column as search term
