@@ -13,44 +13,39 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/tickets/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="/css/converter/converter.css" rel="stylesheet">
     @yield('head')
 </head>
 
 <body>
 
-<!-- Fixed navbar -->
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">Support Ticket App</a>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            @foreach(config('app.nav') as $link => $label)
-                <li class="nav-item active">
-                        <a class="nav-link" href="/{{ $link }}">{{ $label }} <span class="sr-only">(current)</span></a>
-                </li>
-            @endforeach
-        </ul>
-        <form method="GET" action="/tickets/search-process" class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" name="searchTerm" placeholder="filter by title column" value="">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Filter</button>
-        </form>
-    </div>
-</nav>
+<div class="site-wrapper">
 
-<!-- Begin page content -->
-<div class="container">
-    @yield('content')
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">@yield('heading')</h3>
+                </div>
+            </div>
+
+            <div class="inner cover">
+                @yield('content')
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Cover template for <a href="">Bootstrap</a>, by <a href=""></a>.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
-
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
-    </div>
-</footer>
-
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -63,3 +58,4 @@
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
+

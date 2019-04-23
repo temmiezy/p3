@@ -4,10 +4,16 @@
 + Production URL: <http://p3.appsandservices.com>
 + Github URL - <https://github.com/temmiezy/p3>
 
-### Clone
+## Outside resources
+https://getbootstrap.com/docs
 
-- Clone this repo to your local machine using https://github.com/temmiezy/p3
+## 3 Unique inputs
+(1) Text Input for value for conversion
+(2) Dropdown for temperature units for conversion
+(3) Convert button tp submit the form for processing 
 
-## Features
-## Usage (Optional)
-Search -> Use Title column as search term
+## Packages
+(1) barryvdh/laravel-debugbar
+
+## Code style divergences
+none

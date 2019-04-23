@@ -11,18 +11,10 @@
 |
 */
 
-Route::get('/', 'TicketsController@home');
-Route::get('/contact', 'TicketsController@contact');
+Route::post('/converter', 'ConverterController@doConversion');
 
+Route::get('converter', 'ConverterController@index');
 
-Route::get('/tickets/create', 'TicketsController@create');
-Route::post('/tickets', 'TicketsController@store');
-
-Route::get('/tickets/search', 'TicketsController@search');
-Route::get('/tickets/search-process', 'TicketsController@searchProcess');
-
-Route::get('/tickets', 'TicketsController@index');
-Route::get('/tickets{title}', 'TicketsController@index');
 
 Route::fallback(function() {
     return 'The page you requested cannot be found!';
