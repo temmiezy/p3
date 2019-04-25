@@ -20,41 +20,33 @@ One challenge of developing software is thinking of all the unexpected ways user
 Knowing this, it's time to put your reviewee's application to the test. Think of all the unexpected ways their application could be used with the intention of trying to produce some unexpected/undesirable outcome.
 
 Examples...
-+ Trying to submit the form without data threw some error feedback as expected
-+ Submitting the form with one field entered threw error as expected
-+ If an input is asking for a number, try entering some of the following combinations: decimal numbers, negative numbers, letters, symbols, an extremely large number, etc.
-+ Try and access a URL on their site that likely does not exist (e.g. http://a3.domain.com/asdjfks)
-+ Etc.
-
-__Summarize what you tried, and describe any unexpected/undesirable outcomes.__
-
-(Even if you don't find any issues, having the reviewee see what you tried might give them insight into things they did not think to test.)
++ Trying to submit the form without data threw some error feedback as expected, form not submitted
++ Submitting the form with one field entered threw error as expected and the form is not submitted
++ this project has no number field
++ Accessing a non-existing url on the project site threw a laravel 404 error
++ I tried checking the add a background checkbox without choosing a background selects a default background which is perfect because i did not expect the image background to be empty when a add text background is checked
 
 
 
 ## 3. Code: Routes
-Skim through the student's code on Github.
-
-Find their routes file (`routes/web.php`). Thinking about ideal Route/Controller organization&mdash; is there any code in this file that should be happening in a Controller?
+I skimmed through the routing script and i can say the routing code is perfect
 
 If yes, describe.
 
 ## 4. Code: Views
 Skim through the View files in `/resources/views` and address as many of the following points as applicable:
 
-+ Is template inheritance used?
-+ Are there any separation of concern issues (i.e. non-display specific logic in view files)?
-+ Did they do anything in PHP that could have been done in Blade?
-+ Did they use any Blade syntax/techniques you were unfamiliar with?
++ template inheritance is used
++ there are no separation of concern issues
++ the reviewee strictly stuck to the blade development logic
++ I am familiar with all the blade syntax used
 
 ## 5. Code: General
 Address as many of the following points as applicable:
 
-+ Do you notice any inconsistencies between the code and the course notes on [code style](https://github.com/susanBuck/dwa15-fall2018/blob/master/misc/code-style.md)?
-+ Are there any best practices discussed in course material that you feel were not addressed in the code?
-+ Are there aspects of the code that you feel were not self-evident and would benefit from comments?
-+ Are there any parts of the code that you found interesting/would not have thought to do yourself?
-+ Are there any parts of the code that you don't understand?
++ The codes were consistent with the course notes on code style
++ there were no errors when i ran the project url through the w3c html validator
++ The code sty;e shows the reviewee has a good grasp of the code techiques required for this project
 
 ## 6. Misc
-Do you have any additional comments not covered in the above questions?
+The reviewee did a good job
